@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.modalPop-UP .ant-form-item-label{
+  width: 120px;
+  text-align: left;
+}
+.pupUp-Btn{
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+.pupUpBtn-submit{
+  margin-right: 12px;
+}
