@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { PaymentInitModal } from "pg-test-project";
-import { v4 as uuidv4 } from 'uuid';
+// import { PaymentInitModal } from "pg-test-project";
 import uniqid from 'uniqid';
 
 
@@ -60,33 +59,33 @@ function SabpaisaPaymentGateway(props) {
       //1) Testing with production enironment please pass env="prod"
       // 2)Testing with stageing enironment please pass env="" or env="stage"
       // 3)Default it is going to catch env=""
-      <PaymentInitModal
-        clientCode={clientCode}
-        transUserPassword={transUserPassword}
-        transUserName={transUserName}
-        isOpen={isOpen}
-        clientTxnId={uniqid()}
-        authkey={authkey}
-        authiv={authiv}
-        payerName={payerName}
-        payerEmail={payerEmail}
-        payerMobile={payerMobile}
-        payerAddress={payerAddress}
-        amount={amount}
-        amountType={amountType}
-        udf12={udf12}
-        udf13={udf13}
-        udf14={udf14}
-        udf15={udf15}
-        udf16={udf16}
-        udf17={udf17}
-        onToggle={() => setIsOpen(!isOpen)}
-        channelId={channelId}
-        programId={programId}
-        mcc={mcc}
-        label={"Production"}
-        env={'stag'}
-      />
+      // <PaymentInitModal
+      //   clientCode={clientCode}
+      //   transUserPassword={transUserPassword}
+      //   transUserName={transUserName}
+      //   isOpen={isOpen}
+      //   clientTxnId={uniqid()}
+      //   authkey={authkey}
+      //   authiv={authiv}
+      //   payerName={payerName}
+      //   payerEmail={payerEmail}
+      //   payerMobile={payerMobile}
+      //   payerAddress={payerAddress}
+      //   amount={amount}
+      //   amountType={amountType}
+      //   udf12={udf12}
+      //   udf13={udf13}
+      //   udf14={udf14}
+      //   udf15={udf15}
+      //   udf16={udf16}
+      //   udf17={udf17}
+      //   onToggle={() => setIsOpen(!isOpen)}
+      //   channelId={channelId}
+      //   programId={programId}
+      //   mcc={mcc}
+      //   label={"Production"}
+      //   env={'stag'}
+      // />
     }</div>
   )
 }
