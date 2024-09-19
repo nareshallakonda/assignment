@@ -1,0 +1,203 @@
+.parcel-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack cards vertically */
+    align-items: center;
+    /* Center cards horizontally */
+    padding: 20px;
+}
+
+.parcel-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: left;
+}
+
+.parcel-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.parcel-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust spacing between sender and receiver info */
+    gap: 20px;
+}
+
+.sender-info,
+.receiver-info,
+.weight-info {
+    width: 48%;
+    /* Ensure each section takes up about half the container */
+}
+
+.sender-info h4,
+.receiver-info h4,
+.weight-info h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.status-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.status-button:hover {
+    background-color: #0056b3;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.trackOrderinformationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shoeImage img {
+    width: 100px;
+    margin-right: 20px;
+    /* Adjust this value for the desired space */
+}
+
+.trackOrdershoeImageStyle {
+    width: 100%;
+}
+
+.trackOrderdetails {
+    flex: 1;
+}
+
+.orderJourneyContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 5px;
+    /* Adjust spacing between icons */
+}
+
+.iconLineContainer {
+    /* display: flex;
+    align-items: center;
+    margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the items horizontally */
+    margin-top: 20px;
+    padding: 0 10%;
+    /* Optional: adjust padding if needed */
+}
+
+.horizontalLine {
+    margin: 0 10px;
+    /* Adjust spacing between icons and lines */
+    color: #E0E0E0;
+    /* Default color */
+}
+
+.close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Loading text animation */
+  .loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  /* Animation for pulsing effect */
+  @keyframes pulse {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }

@@ -1,0 +1,131 @@
+/* Center container */
+.dashboard-container {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url('../assets/parceLogisticImg.png');
+    background-size: cover;  /* Ensures the image covers the container fully */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Gradient heading */
+.image-container h2 {
+    margin-top: 70px;
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+/* Overlay styling */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text-overlay span {
+    font-size: 18px;
+}
+
+.go-booking {
+    margin-top: 130px !important;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+/* For smaller devices */
+.image-container span {
+    display: block;
+    font-weight: bold;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .image-container {
+        height: 400px;
+    }
+
+    .image-container h2 {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    .text-overlay {
+        padding: 15px;
+    }
+
+    .text-overlay h2 {
+        font-size: 24px;
+    }
+
+    .text-overlay span {
+        font-size: 16px;
+    }
+
+    .go-booking {
+        margin-top: 100px;
+        font-size: 14px;
+        margin-right: 50px;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .image-container {
+        height: 300px;
+    }
+
+    .image-container h2 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .text-overlay {
+        padding: 10px;
+    }
+
+    .text-overlay h2 {
+        font-size: 20px;
+    }
+
+    .text-overlay span {
+        font-size: 14px;
+    }
+
+    .go-booking {
+        margin-top: 80px;
+        font-size: 12px;
+        padding: 8px 16px;
+        margin-right: 20px;
+    }
+}

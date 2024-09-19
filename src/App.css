@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,15 +36,64 @@
     transform: rotate(360deg);
   }
 }
-.modalPop-UP .ant-form-item-label{
-  width: 120px;
-  text-align: left;
+.brown-section {
+  background-color: #713229;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
-.pupUp-Btn{
-  text-align: right;
+
+nav {
+display: flex;
+justify-content: space-between;align-items: center;height: 70px;padding: 0px 16px;
+}
+
+
+.nav li {
+  font-size: 16px;margin-left: 16px;
+  list-style: none;
+    display: inline;
+    vertical-align: middle;
+  
+}
+
+.nav li:last-child {
+  position: relative;
+}
+.nav{padding: 0;}
+.nav img {
+  width: 38px;
+  border-radius: 20px;vertical-align: middle;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  /* text-align: center; */
+}
+.nav {
+  list-style-type: none;
   display: flex;
-  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
 }
-.pupUpBtn-submit{
-  margin-right: 12px;
+
+.nav li {
+  padding: 2px 15px;
 }
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-nav {
+  background-color: aqua;
+  border-radius: 8px;
+}
+
+.active-nav a {
+  color: black !important;
+}
+
